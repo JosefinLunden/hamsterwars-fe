@@ -9,7 +9,7 @@ const port = process.env.PORT || 2048;
 
 app.use(express.static(__dirname + '/../build'));
 
-app.use('/assets', express.static('hamsters'));
+app.use('/assets', express.static(__dirname + '/hamsters'));
 
 // routes 
 
