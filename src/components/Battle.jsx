@@ -5,7 +5,7 @@ import {updateHamsterWinner, updateHamsterLoser, saveGame } from './BattleFuncti
 
 const Battle = () => {
 
-  const url = 'http://localhost:3001/hamsters/random';
+  const url = '/api/hamsters/random';
   const [hamsterOne, setHamsterOne] = useState(null);
   const [hamsterTwo, setHamsterTwo] = useState(null);
   const [winner, setWinner] = useState(null);
@@ -56,7 +56,7 @@ useEffect (() => {
           {hamsterOne !== null  ? 
           <>
           <h2>{hamsterOne.name}</h2>
-          <img src={`http://localhost:3001/assets/${hamsterOne.imgName}`} alt="a cute hamster"/>
+          <img src={`/assets/${hamsterOne.imgName}`} alt="a cute hamster"/>
           <button onClick={() => handleClick(hamsterOne, hamsterTwo)}>{hamsterOne.name} is the cutiest</button>
           </>
           : 'no data'}
@@ -66,7 +66,7 @@ useEffect (() => {
           {hamsterTwo !== null  ? 
           <>
           <h2>{hamsterTwo.name}</h2>
-          <img src={`http://localhost:3001/assets/${hamsterTwo.imgName}`} alt="a cute hamster"/>
+          <img src={`/assets/${hamsterTwo.imgName}`} alt="a cute hamster"/>
           <button onClick={() => handleClick(hamsterTwo, hamsterOne)}>{hamsterTwo.name} is the cutiest</button>
           </>
           : 'no data'}
