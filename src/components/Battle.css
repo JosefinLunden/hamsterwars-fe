@@ -1,7 +1,7 @@
 h1 {
   text-align: center;
   margin-top:2em;
-  font-family: 'Bebas Neue', 'Arial Black', monospace;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .hamsterBattle{
   display: flex;
