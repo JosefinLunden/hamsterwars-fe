@@ -7,7 +7,7 @@ export const updateHamsterWinner = (id) => {
       body: game
   };
 
-  fetch(`http://localhost:3001/hamsters/${id}/results`, requestOptions)
+  fetch(`api/hamsters/${id}/results`, requestOptions)
   .then(response => response.text())
   .then(data => console.log(data))
   .catch(error => console.log('error', error));
@@ -23,7 +23,7 @@ export const updateHamsterWinner = (id) => {
         body: game
     };
   
-    fetch(`http://localhost:3001/hamsters/${id}/results`, requestOptions)
+    fetch(`api/hamsters/${id}/results`, requestOptions)
     .then(response => response.text())
     .then(data => console.log(data))
     .catch(error => console.log('error', error));
@@ -42,7 +42,7 @@ export const updateHamsterWinner = (id) => {
       body: game,
       };
 
-      fetch("http://localhost:3001/games", requestOptions)
+      fetch("api/games", requestOptions)
       .then(response => response.text())
       .then(data => console.log(data))
       .catch(error => console.log('error', error));

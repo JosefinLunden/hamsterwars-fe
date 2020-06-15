@@ -56,7 +56,7 @@ useEffect (() => {
           {hamsterOne !== null  ? 
           <>
           <h2>{hamsterOne.name}</h2>
-          <img src={`/assets/${hamsterOne.imgName}`} alt="a cute hamster"/>
+          <img src={`api/assets/${hamsterOne.imgName}`} alt="a cute hamster"/>
           <button onClick={() => handleClick(hamsterOne, hamsterTwo)}>{hamsterOne.name} is the cutiest</button>
           </>
           : 'no data'}
@@ -66,7 +66,7 @@ useEffect (() => {
           {hamsterTwo !== null  ? 
           <>
           <h2>{hamsterTwo.name}</h2>
-          <img src={`/assets/${hamsterTwo.imgName}`} alt="a cute hamster"/>
+          <img src={`api/assets/${hamsterTwo.imgName}`} alt="a cute hamster"/>
           <button onClick={() => handleClick(hamsterTwo, hamsterOne)}>{hamsterTwo.name} is the cutiest</button>
           </>
           : 'no data'}
