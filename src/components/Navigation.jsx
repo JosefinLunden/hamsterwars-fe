@@ -11,7 +11,7 @@ const Navigation = () => {
         <Link to='/battle'>
           <li>Battle</li>
         </Link>
-        <li className="hamsterWar">Hamster war</li>
+        <li className="hamsterWar">HAMSTER WAR</li>
         <Link to='/stats'>
           <li>Stats</li>
         </Link>
