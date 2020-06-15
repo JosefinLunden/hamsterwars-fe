@@ -15,7 +15,7 @@ router.get('/total', async (req,res) => {
     let numberOfGames = snapShot.size;
     
     // send the respond. 
-    res.send({ msg: `Total number of games: ${numberOfGames}`})
+    res.send({ allGames: numberOfGames})
   
   
   }

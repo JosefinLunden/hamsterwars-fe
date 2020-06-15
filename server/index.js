@@ -5,35 +5,30 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-  
-
+const port = process.env.PORT || 2048;
 
 app.use(express.static(__dirname + '/../build'));
 
-app.use('/assets', express.static('hamsters'));
+app.use('/api/assets', express.static('hamsters'));
 
 // routes 
 
 // hamsters 
 const hamstersRoute = require('./routes/hamsters');
-app.use('/hamsters', hamstersRoute);
+app.use('/api/hamsters', hamstersRoute);
 
 
 // charts
 const chartsRoute = require('./routes/charts');
-app.use('/charts', chartsRoute);
+app.use('/api/charts', chartsRoute);
 
 // games 
 const gamesRoute = require('./routes/games');
-app.use('/games', gamesRoute)
+app.use('/api/games', gamesRoute)
 
 // stats
 const statsRoute = require('./routes/stats');
-app.use('/stats', statsRoute);
+app.use('/api/stats', statsRoute);
 
 
-
-
-app.listen(3001, () => {
-  console.log('Server up n running on port 3000')
-})
+app.server.listen(port, () => console.log('Server is listening on port ' + port));

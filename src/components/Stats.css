@@ -1,0 +1,16 @@
+.allGames {
+  text-align: center;
+}
+.topFive img {
+  height: 200px;
+  width: 300px;
+}
+.topFive h2 {
+  text-align: center;
+  margin-top:4em;
+}
+.topFive li {
+  text-align: center;
+  margin:3em;
+}
+

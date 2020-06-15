@@ -1,10 +1,16 @@
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  min-height: 10vh;
-  background-color: lightgray;
+  background-color: #FBCBA5;
+  padding-top:5em;
+  padding-bottom:3em;
   
+  
+}
+.nav-links .hamsterWar {
+  font-size: 2em;
+  font-family: 'Bebas Neue', Courier, monospace;
 }
 
 .nav-links {
@@ -13,6 +19,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
+  font-family: 'Montserrat';
   
 }
 
@@ -28,4 +35,30 @@ a:hover {
 
 .hero-image {
   width: 100%;
+  height: auto;
+}
+.mainHeadline {
+  font-family: 'Bebas Neue', Courier, monospace;
+  font-size: 5em;
+  margin:0
+}
+.pHeadQuestion {
+  text-align: center;
+  margin-bottom:0;
+  margin-top:2em;
+  font-family: 'Montserrat';
+}
+main p {
+  text-align: center;
+  margin:1em 26em;
+  font-family: 'Montserrat';
+}
+main {
+  margin-bottom:4em;
+  margin-top:4em;
+  text-align:center;
+}
+footer {
+  background-color: #FBCBA5;
+  height: 4vh;
 }

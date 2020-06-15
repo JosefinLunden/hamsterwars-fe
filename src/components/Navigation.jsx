@@ -11,14 +11,12 @@ const Navigation = () => {
         <Link to='/battle'>
           <li>Battle</li>
         </Link>
+        <li className="hamsterWar">Hamster war</li>
         <Link to='/stats'>
           <li>Stats</li>
         </Link>
         <Link to='/upload'>
           <li>Upload</li>
-        </Link>
-        <Link to='/allhamsters'>
-          <li>All hamsters</li>
         </Link>
       </ul>
     </nav>
