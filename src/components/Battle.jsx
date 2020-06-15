@@ -48,7 +48,7 @@ useEffect (() => {
   return (
     <div> 
       <header>
-        <h1>Vote for the cutiest hamster</h1>
+        <h1>Vote for the cutest hamster</h1>
       </header>
       <section className="hamsterBattle">
        
@@ -57,7 +57,7 @@ useEffect (() => {
           <>
           <h2>{hamsterOne.name}</h2>
           <img src={`/assets/${hamsterOne.imgName}`} alt="a cute hamster"/>
-          <button onClick={() => handleClick(hamsterOne, hamsterTwo)}>{hamsterOne.name} is the cutiest</button>
+          <button onClick={() => handleClick(hamsterOne, hamsterTwo)}>{hamsterOne.name} is the cutest</button>
           </>
           : 'no data'}
 
@@ -67,7 +67,7 @@ useEffect (() => {
           <>
           <h2>{hamsterTwo.name}</h2>
           <img src={`/assets/${hamsterTwo.imgName}`} alt="a cute hamster"/>
-          <button onClick={() => handleClick(hamsterTwo, hamsterOne)}>{hamsterTwo.name} is the cutiest</button>
+          <button onClick={() => handleClick(hamsterTwo, hamsterOne)}>{hamsterTwo.name} is the cutest</button>
           </>
           : 'no data'}
 

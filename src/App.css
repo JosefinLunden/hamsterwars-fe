@@ -10,7 +10,7 @@ nav {
 }
 .nav-links .hamsterWar {
   font-size: 2em;
-  font-family: 'Bebas Neue', Courier, monospace;
+  font-family: 'Bebas Neue', 'Arial Black', monospace;
 }
 
 .nav-links {
@@ -38,7 +38,7 @@ a:hover {
   height: auto;
 }
 .mainHeadline {
-  font-family: 'Bebas Neue', Courier, monospace;
+  font-family: 'Bebas Neue', 'Arial Black', monospace;
   font-size: 5em;
   margin:0
 }
