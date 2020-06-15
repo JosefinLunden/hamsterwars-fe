@@ -31,4 +31,4 @@ const statsRoute = require('./routes/stats');
 app.use('/api/stats', statsRoute);
 
 
-app.server.listen(port, () => console.log('Server is listening on port ' + port));
+app.listen(port, () => console.log('Server is listening on port ' + port));
