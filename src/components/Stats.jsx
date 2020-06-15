@@ -62,7 +62,7 @@ useEffect(() => {
 
       {TopFiveWinningHamsters ?<section className="topFive">
           <h2>Top five winners</h2>
-          <ol className="statslist">
+          <ol className="statsList">
           {TopFiveWinningHamsters.map(hamster => (
               <li key={hamster.id}>
                   {hamster.name}  <br/> <img src={`/assets/${hamster.imgName}`} alt="cute hamster"/>  <br/> Has won {hamster.wins} battles <br/> Played {hamster.games} games.
@@ -75,7 +75,7 @@ useEffect(() => {
 
       {TopFiveLosingHamsters ?<section className="topFive">
           <h2>Top five losers</h2>
-          <ol className="statslist">
+          <ol className="statsList">
           {TopFiveLosingHamsters.map(hamster => (
               <li key={hamster.id}>
                   {hamster.name}  <br/> <img src={`/assets/${hamster.imgName}`} alt="cute hamster"/>  <br/> Total defeats: {hamster.defeats} <br/> Total games: {hamster.games}
