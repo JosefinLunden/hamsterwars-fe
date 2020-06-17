@@ -6,7 +6,7 @@ export const postNewHamster = async (name, age, favFood, loves ) => {
     loves,
     games: 0,
     wins: 0,
-    defeats: 0, 
+    defeats: 0
   }
   let requestOptions = {
     method: 'POST',
@@ -21,3 +21,5 @@ export const postNewHamster = async (name, age, favFood, loves ) => {
 
 
   }
+
+ 

@@ -35,7 +35,6 @@ const UploadHamster = () => {
 }
 
 
-
 return (
   <section>
     <h1 className="uploadHeadline">Upload your own hamster</h1>
@@ -73,6 +72,7 @@ return (
         <div className="error"> {lovesError}</div>
       </div>
       <button onClick={e=>clickHandle(e)}>Add your hamster to the battle</button>
+      <p className={newHamsterAdded ? "" : "hide"}>{newHamsterAdded}</p>
     </form>
     <footer>
     </footer>

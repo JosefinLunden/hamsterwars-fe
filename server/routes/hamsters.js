@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const router = new Router(); 
-const { auth, db } = require ('./../firebase');
+const { db } = require ('./../firebase');
 
 // GET random hamster
 router.get('/random', async (req , res) => {

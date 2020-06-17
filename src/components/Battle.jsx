@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Battle.css';
 import {updateHamsterWinner, updateHamsterLoser, saveGame } from './BattleFunctions';
+import MatchUp from './MatchUp';
 
 
 const Battle = () => {
@@ -40,12 +41,6 @@ const handleClick = (winner, loser) => {
   saveGame(hamsterOne, hamsterTwo);
 }
 
-useEffect (() => {
-  if(winner)
-  console.log(winner)
-})
-
-
   return (
     <div> 
       <header>
@@ -77,7 +72,8 @@ useEffect (() => {
         
         </section>
         <article className="winningHamster">
-          {winner ? <> <p>The winner is {winner.name}  </p> </> : '' }
+          {winner ?  <MatchUp winner={winner} />  : '' }
+          
           
         </article>
         <article className="newHamster">
