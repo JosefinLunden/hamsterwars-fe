@@ -27,6 +27,7 @@ const Battle = () => {
 
 }, [newGame])
 
+
 const createNewGame = (setNewGame, newGame, setWinner) => {
   setNewGame(!newGame);
   setWinner(null);

@@ -1,0 +1,40 @@
+.form-group {
+  border-radius: 4px;
+  padding: 0.7em;
+  font-family: 'Montserrat';
+  font-size: 1.2em;
+  margin-left:5em;
+}
+.uploadHeadline {
+  text-align: left;
+  margin-left:4.5em;
+  margin-bottom:1em;
+}
+.form-group input[type=text] {
+  width: 20em;
+  padding: 1em;
+  margin-top:1em;
+}
+.form-group label {
+  display: block;
+  font-size: 0.9em;
+}
+form button {
+  text-align: center;
+  margin-left:6em;
+  margin-bottom:2em;
+}
+input.valid {
+  border: 1px solid #5BBE36;
+  border-radius: 2px;
+}
+input.invalid {
+  border: 1px solid #DD2626;
+  border-radius: 2px;
+}
+.error {
+  color: #DD2626;
+  /* position: absolute; */
+  font-size: 0.8em;
+  margin-top:1em;
+}
